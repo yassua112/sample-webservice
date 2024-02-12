@@ -54,7 +54,7 @@ public class SoapSampleEndpoin {
 
 	@PayloadRoot(namespace = NAMESPACE, localPart = "sampleservicerq")
 	@ResponsePayload
-	public Sampleservicers getLoanStatus(@RequestPayload Sampleservicerq request,@SoapHeader(value = "{http://www.oracle.com/external/services/sampleservice/header}authenticationheader") SoapHeaderElement  authToken){
+	public Sampleservicers getLoanStatus(@RequestPayload Sampleservicerq request,@SoapHeader(value = "{http://www.oracle.com}authenticationheader") SoapHeaderElement  authToken) throws Exception{
 		Authenticationheader headerRequest = new Authenticationheader();	
 	try {
         JAXBContext context = JAXBContext.newInstance(ObjectFactory.class);
