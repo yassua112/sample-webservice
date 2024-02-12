@@ -1,0 +1,26 @@
+<xs:schema 
+      attributeFormDefault="unqualified" 
+      elementFormDefault="qualified" 
+      targetNamespace="http://www.oracle.com/external/services/sampleservice/request/v1.0"
+      xmlns:orac = "http://www.oracle.com/external/services/sampleservice/header"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="service_id" type="xs:int"/>
+  <xs:element name="order_type" type="xs:string"/>
+  <xs:element name="type" type="xs:string"/>
+  <xs:element name="trx_id" type="xs:string"/>
+
+  <xs:element name="sampleservicerq"> 
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="v1:service_id" xmlns:v1="http://www.oracle.com/external/services/sampleservice/request/v1.0"/>
+        <xs:element ref="v1:order_type" xmlns:v1="http://www.oracle.com/external/services/sampleservice/request/v1.0"/>
+        <xs:element ref="v1:type" xmlns:v1="http://www.oracle.com/external/services/sampleservice/request/v1.0"/>
+        <xs:element ref="v1:trx_id" xmlns:v1="http://www.oracle.com/external/services/sampleservice/request/v1.0"/>
+        
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+ 
+</xs:schema>

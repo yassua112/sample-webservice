@@ -1,0 +1,19 @@
+<xs:schema 
+      attributeFormDefault="unqualified" 
+      elementFormDefault="qualified" 
+      targetNamespace="http://www.oracle.com/external/services/sampleservice/header"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+      xmlns:orac="http://www.oracle.com/external/services/sampleservice/header"
+      >
+      <xs:element name="username" type="xs:string"/>
+      <xs:element name="password" type="xs:string"/>
+
+      <xs:element name="authenticationheader"> 
+      <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="orac:username" xmlns:orac="http://www.oracle.com/external/services/sampleservice/header"/>
+              <xs:element ref="orac:password" xmlns:orac="http://www.oracle.com/external/services/sampleservice/header"/>
+            </xs:sequence>
+          </xs:complexType>
+      </xs:element>
+</xs:schema>
