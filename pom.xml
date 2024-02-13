@@ -87,11 +87,6 @@
 					</execution>
 				</executions>
 				<configuration>
-					<sources>
-						<source>src/main/resources/sampleservicerq.xsd</source>
-						<source>src/main/resources/authenticationheader.xsd</source>
-						<source>src/main/resources/sampleservicers.xsd</source>
-					</sources>
 					<outputDirectory>${project.basedir}/src/main/java</outputDirectory>
 					<clearOutputDir>false</clearOutputDir>
 				</configuration>

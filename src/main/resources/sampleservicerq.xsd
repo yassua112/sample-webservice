@@ -5,7 +5,7 @@
       xmlns:orac = "http://www.oracle.com/external/services/sampleservice/header"
       xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <xs:element name="service_id" type="xs:int"/>
+  <xs:element name="service_id" type="xs:string"/>
   <xs:element name="order_type" type="xs:string"/>
   <xs:element name="type" type="xs:string"/>
   <xs:element name="trx_id" type="xs:string"/>
